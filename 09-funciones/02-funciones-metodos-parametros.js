@@ -17,18 +17,22 @@ const numero2 = "20";
 // Función
 console.log ( parseInt (numero2) );
 
-// Método
+// Method
 console.log ( numero1.toString() );
 
 // Parámetros
+/**
+ * @param  {string} name
+ * @param  {string} surname
+ */
 function saludar (name, surname) {
     console.log(`Hola ${name} ${surname}`);
 }
-saludar('Javi', 'Sierra'); // Salida: Hola Javi Sierra
+saludar("Javi", "Sierra"); // Salida: Hola Javi Sierra
 saludar(); // Salida: Hola undefined undefined
 
 // Default parameters
-function saludar2 (name='John', surname='Doe') {
+function saludar2 (name="John", surname="Doe") {
     console.log(`Hola ${name} ${surname}`);
 };
 saludar2(); // Salida: Hola John Doe
